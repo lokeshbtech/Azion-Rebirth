@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  #countdown {
+    margin: 0px 0px 20px 350px;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    background: rgba(99, 94, 99, 0.2);
+    /* Soft magenta glow */
+    padding: 15px 20px;
+    /* border: 2px dashed magenta; */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(180, 178, 180);
+    text-align: center;
+    display: inline-block;
+    animation: pulse 2s infinite;
+  }
+
+  #countdown span {
+    margin: 0 5px;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 15px rgb(180, 178, 180);
+    }
+
+    50% {
+      box-shadow: 0 0 30px rgb(180, 178, 180);
+    }
+
+    100% {
+      box-shadow: 0 0 15px rgb(180, 178, 180);
+    }
+  }
+
+  @media (max-width: 480px) {
+    #countdown {
+      flex-direction: row;
+      justify-content: center;
+      padding: 10px;
+      font-size: 16px;
+      margin: 0px 0px 20px 10px;
+    }
+
+    #countdown span {
+      font-size: 16px;
+      min-width: 50px;
+    }
+
+    #countdown small {
+      font-size: 10px;
+    }
+  }
+</style>
+
+<body>
+  <video autoplay loop muted plays-inline class="backvideo">
+
+    <source src="./ASSETS/AdobeStock_500673637_Video_HD_Preview.mov" type="video/mp4">
+  </video>
+  <header>
+    <div class="header">
+      <div class="logo1">
+        <img src="./ASSETS/aids_logo.png" alt="">
+      </div>
+      <div class="headtitles">
+        <p>Home</p>
+        <p> <a href="#about">About Us</a></p>
+        <p><a href="#Event">Event</a></p>
+        <p><a href="#Contact">Contact</a></p>
+      </div>
+      <div class="logo2">
+        <img src="" alt="">
+      </div>
+
+    </div>
+  </header>
+  <div class="hero1">
+    <p>AIZION</p>
+    <h3>An AI Vision</h3>
+  </div>
+  <div id="countdown">
+    <span id="days"></span> Days
+    <span id="hours"></span> Hours
+    <span id="minutes"></span> Minutes
+    <span id="seconds"></span> Seconds
+  </div>
+  <div class="hero2">
+    <div id="about" class="container2-1">
+      <h2>About Symposium</h2>
+      <hr>
+    </div>
+
+    <div class="container2-2">
+      <p>Aizion is an electrifying tech symposium where innovation meets excitement! We bring together tech
+        enthusiasts for paper presentations, code debugging, and tech quiz, alongside thrilling non-technical
+        events like movie-based challenges and Free Fire battles. Whether you're here to compete, learn, or have
+        fun, Aizion is the place to be!
+
+        <br><br>Join us and be part of the ultimate fusion of tech and entertainment!
+
+      <div class="container2-3">
+        <img src="" alt="">
+        <br><br> Event Held on April 17th Starts at 9AM</p>
+        <p>Entry Fee = 50/- (per head)</p>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- technical event segment -->
+
+
+  <div class="event_div">
+    <hr>
+    <center>
+      <p style="font-size: 30px;">Technical Event</p>
+      <hr>
+    </center>
+    <div class="tech_event_nav">
+
+      <div class="hero3">
+        <div class="container3-1">
+          <img src="./ASSETS/paper presentations.jpg" alt="">
+          <div class="cont3-1-1">
+            <p>Paper presentation</p>
+
+            <p>An opportunity to present impactful research papers, gain insights, and engage in meaningful academic
+              discussions.</p>
+            <button id="viewDetailsBtn">View Details</button>
+          </div>
+        </div>
+
+        <!-- Hidden event details section -->
+        <div id="eventDetails" class="event-details">
+          <div class="details-content">
+            <h2>Paper Presentation - Details</h2> <br>
+            <p>
+              The Paper Presentation event is a platform for participants to showcase their innovative ideas, research
+              work, and technical knowledge in front of a panel of judges and peers. It encourages students to think
+              critically, present effectively, and defend their concepts with clarity.
+              <br><br>
+              Event Structure <br> <br>
+
+              Total Rounds: 1 (Final Presentation) <br><br>
+
+              Format: Oral presentation supported with PowerPoint slides (PPT) <br> <br>
+              Time Limit: <br><br>
+
+              8 minutes – Presentation by the participant/team <br><br>
+
+              2 minutes – Question & Answer session with judges <br><br>
+            </p>
+            <span style="display: flex; justify-content: space-evenly;"><button id="closeDetailsBtn">Close</button>
+              <button>Register</button></span>
+          </div>
+        </div>
+
+      </div>
+      <div class="hero3">
+        <div class="container3-1">
+          <img src="./ASSETS/dataquest.jpg" alt="">
+          <div class="cont3-1-1">
+            <p>DataQuest: Analytics Arena</p>
+
+            <p>A thrilling three-round technical quiz in the Data Analytics domain testing basics, dataset
+              interpretation, and rapid analytical thinking.</p>
+            <button id="viewDataQuestBtn">View Details</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hidden details section for DataQuest -->
+
+      <div id="dataQuestDetails" class="event-details1">
+        <div class="details-content1">
+          <h2>DataQuest: Analytics Arena - Details</h2><br>
+          <p>
+            🔹 <b>Round 1:</b> Data Basics: MCQs on statistics, analytics terms, data types, Python basics <br> <br>
+            🔹 <b>Round 2:</b>Crack the Dataset: Scenario-based dataset problem solving <br><br>
+            🔹 <b>Round 3:</b> Data Dash: Rapid-fire analytics questions on graphs, patterns, predictions <br><br>
+            This event tests your data interpretation skills, problem-solving ability, and presence of mind under time
+            pressure. It’s the ultimate arena where speed meets accuracy in the world of data analytics!
+          </p> <br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closeDataQuestBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+
+      <!-- section of the Crossword -->
+      <div class="hero3">
+        <div class="container3-1">
+          <img src="./ASSETS/mind strom.jpg" alt="">
+          <div class="cont3-1-1">
+            <p>Mind Strom</p>
+
+            <p>An exciting puzzle-solving contest with crosswords, abbreviations, and memory challenges testing Python,
+              AI & DS knowledge.</p>
+            <button id="viewCrosswordBtn">View Details</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Hidden details section for Crossword -->
+    <div id="crosswordDetails" class="event-details2">
+      <div class="details-content2">
+        <h2>Mind Strom - Details</h2><br>
+
+        <p>
+          A Mind Strom is a fun-yet-brainy event where participants solve
+          crossword puzzle and logical challenges based on technical topics such as python
+          programming, AI&DS Related Topics This Event Tests Technical Knowledge,
+          Vocabulary, Problem Skills Etc., Under Time Pressure. <br> <br>
+          <b>Round 1:</b> Tech Crossword: Solve a simple tech-themed crossword <br><br>
+          <b>Round 2:</b> Abbreviation Hunt: Expand given technical abbreviations. <br><br>
+          <b>Round 3:</b> Memory & IQ Test (Final): Identify details from images shown briefly on projector. <br><br>
+          A test of logic, knowledge, and quick thinking!
+        </p> <br>
+        <span style="display: flex; justify-content: space-evenly;"><button id="closeCrosswordBtn">Close</button> <br>
+          <button>Register</button></span>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- section of the Cipher in the dark -->
+    <div class="tech_event_nav">
+      <div class="hero3">
+        <div class="container3-1">
+          <img src="./ASSETS/cipher in the dark.jpg" alt="">
+          <div class="cont3-1-1">
+            <p> Cipher in the Dark</p>
+
+            <p>Cipher in the Dark is a thrilling blind coding challenge testing logic, debugging, and accuracy across
+              three intense rounds.</p>
+            <button id="viewcidBtn">View Details</button>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+      <!-- Hidden details section for cipher in the dark -->
+      <div id="cidDetails" class="cidevent-details2">
+        <div class="ciddetails-content2">
+          <h2>Cipher in the Dark - Details</h2> <br>
+          <p>
+            Cipher in the Dark is a blind
+            coding challenge where participants prove their logic, accuracy, and coding skills
+            without seeing the screen. This event pushes coders beyond comfort zones to
+            showcase true programming brilliance. <br><br>
+            <b>Round 1:</b> The Gamble Code: A fun logic and strategy game where participants play with safe and buggy
+            code snippets. Success depends on smart bidding and bluff catching. <br><br>
+            <b>Round 2:</b> The Oracle of Errors: Debugging challenge where participants identify and fix errors in a
+            given program. <br><br>
+            <b>Round 3:</b> Code in the Mist (Final): Blind coding challenge where participants retype and execute a
+            given program in a hidden editor.<br><br><br>
+            “Code without sight, compete with insight!”
+          </p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closecidBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+
+
+      <!-- section of the edge runners -->
+
+
+      <div class="hero3">
+        <div class="container3-1">
+          <img src="./ASSETS/edge runners.jpg" alt="">
+          <div class="cont3-1-1">
+            <p>Edge Runners</p>
+
+            <p>An interactive murder-mystery event where teams solve riddles, puzzles, and coding challenges to uncover
+              the killer.</p>
+            <button id="viewerBtn">View Details</button>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <!-- Hidden details section edge runners -->
+
+      <div id="erDetails" class="erevent-details2">
+        <div class="erdetails-content2">
+          <h2>Edge Runners - Details</h2> <br>
+          <p>
+            Edge Runners is a thrilling, interactive event that combines aptitude,
+            critical thinking, puzzles, and code debugging within a murder mystery
+            storyline. Participants must solve riddles, crack passkeys, and decode
+            hidden clues to
+            uncover the killer—making it a true race against time! <br> <br>
+            <b>Round 1:</b> Enter the Crime Scene: Solve riddles and clues to unlock the murder room. <br><br>
+            <b>Round 2:</b> The Victim’s Laptop: Crack aptitude-based puzzles to find the passkey and reveal hidden
+            information. <br><br>
+            <b>Round 3:</b> Code of the Hacker (Final): Debug and solve codes left unsolved by the victim, uncovering
+            the final truth. <br><br><br>
+            “It’s not just solving puzzles—it’s a race against time!”
+          </p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closeerBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <hr>
+
+
+
+
+  <!-- non-tech events -->
+  <div class="non_event_div">
+    <center>
+      <p style="font-size: 30px;">Non-Technical Event</p>
+      <hr>
+    </center>
+
+
+    <div class="non_tech_event_nav">
+
+
+      <!-- section of the triad of triumph -->
+      <div class="hero4">
+        <div class="container4-1">
+          <img src="./ASSETS/teech_bg.jpeg" alt="">
+          <div class="cont4-1-1">
+            <p>Triad Of Triumph </p>
+
+            <p>A fun non-technical event with trivia, active games, and clay modeling testing creativity, speed, and
+              teamwork across three rounds</p>
+            <button id="viewtotBtn">View Details</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Hidden details section tot -->
+
+      <div id="totDetails" class="totevent-details2">
+        <div class="totdetails-content2">
+          <h2>Traid Of Triumph - Details</h2><br>
+          <p>
+            <b>Round 1:</b> Trivia: A quiz where all answers must begin with a given letter. <br><br>
+            <b>Round 2:</b> Move Mania: A set of 3 sub-games – Twisters, Sort the Balls, Arrange the Cans. Each pair of teams competes in one sub-game. <br><br>
+            <b>Round 3:</b>Mold Masters (Final): Clay modelling challenge where teams recreate 2 figures displayed on the projector. Judging based on speed & craftsmanship.<br><br><br>
+            “Trivia, twists, and talent—fun reimagined!”          
+</p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closetotBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+      <!-- section of squid game -->
+
+      <div class="hero4">
+        <div class="container4-1">
+          <img src="./ASSETS/squidgame.jpg" alt="">
+          <div class="cont4-1-1">
+            <p>Squid Game</p>
+
+            <p>A fun-filled non-technical event featuring balloon towers, water pong, and ping-pong challenges testing
+              teamwork, creativity, and strategy</p>
+            <button id="viewsqBtn">View Details</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Hidden details section sq -->
+
+      <div id="sqDetails" class="sqevent-details2">
+        <div class="sqdetails-content2">
+          <h2>Squid Game - Details</h2><br>
+          <p>
+            A fun, non-technical event focused on creativity, teamwork, 
+            and strategy. Participants will engage in interactive and
+             entertaining challenges that test their wit, coordination, 
+             and imagination. <br><br>
+            <b>Round 1:</b> Balloon Cup Tower: Teams use balloons to stack paper cups into the tallest freestanding tower within 3 minutes. The tallest stable tower wins. <br><br>
+            <b>Round 2:</b> Water Pong Game: Teams throw balls into cups filled with water, aiming to hit all 10 cups first. <br><br>
+            <b>Round 3:</b> Ping-Pong Ball Game: Players throw ping-pong balls into a glass, scoring points for each successful shot. The highest score wins.<br><br><br>
+            "Play, Team Up, and Tower Up the Fun!"
+          </p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closesqBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+      <!-- section of Mystery vibes -->
+
+      <div class="hero4">
+        <div class="container4-1">
+          <img src="./ASSETS/mystery vibes.jpg" alt="">
+          <div class="cont4-1-1">
+            <p>Mystery Vibes </p>
+
+            <p>A fun entertainment quiz where participants identify movies and songs through images, lyrics, and
+              music with scoring challenges.</p>
+            <button id="viewmvBtn">View Details</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hidden details section mv -->
+
+      <div id="mvDetails" class="mvevent-details2">
+        <div class="mvdetails-content2">
+          <h2>Mystery Vibes - Details</h2><br>
+          <p>
+            Mystery Vibes is an entertaining, non-technical event where participants 
+            test their knowledge of movies and songs. The competition features 
+            multiple rounds: guessing movies from images, identifying missing 
+            lines in song lyrics, and recognizing songs or movies from background 
+            music (BGM). 
+            Wrong answers carry negative marks, adding an exciting challenge. <br><br>
+            <b>Round 1:</b>Frame-to-Film Matching: Identify the movie from still frames or images, including tricky or iconic shots.<br><br>
+            <b>Round 2:</b> Lyrics Matchup: Match given lyrics to the correct song and/or movie. Lyrics may be original or translated. <br><br>
+            <b>Round 3:</b> Track Finder: Identify the song or movie from short audio clips, which may be altered to increase difficulty. <br><br><br>
+            “Guess the Frames, Fill the Lines, Find the Tunes!”          
+          </p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closemvBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+    <!-- section for ff -->
+    <div class="non_tech_event_nav">
+      <div class="hero4">
+        <div class="container4-1">
+          <img src="./ASSETS/ff.jpg" alt="">
+          <div class="cont4-1-1">
+            <p>E-Sportz</p>
+            <p>An action-packed Esports event featuring Free Fire and BGMI, where teams battle for glory, skill, and
+              ultimate victory.</p>
+            <button id="viewffBtn">View Details</button>
+          </div>
+        </div>  
+
+      </div>
+
+      <!-- Hidden details section ff -->
+
+      <div id="ffDetails" class="ffevent-details2">
+        <div class="ffdetails-content2">
+          <h2>E-Sportz - Details</h2><br>
+          <p>
+            Battle Vibes is an action-packed, non-technical gaming event where 
+            participants showcase their skills in BGMI and Free Fire. The rounds 
+            will be announced live, keeping the excitement and suspense high. 
+            Players compete in fun and challenging tasks, 
+            testing their strategy, teamwork, and reflexes. <br> <br>
+            <b>Rounds :</b> The specific rounds and challenges will be revealed during the live event to keep participants on their toes. <br><br>
+            
+            “Gear Up, Squad Up, Game On!”
+          </p><br>
+          <span style="display: flex; justify-content: space-evenly;"><button id="closeffBtn">Close</button>
+            <button>Register</button></span>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+  </div>
+  <hr>
+
+
+
+
+<div class="team">
+  <h1>Meet Our Team</h1>
+  <div class="president">
+    <h2>President & vice-president</h2>
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>Aswin Raja <br><br>
+           President   <br> <br>
+           +91 82483 96035</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Mithun Sriram <br><br>    
+           Vice-President     <br><br>
+           +91 95142 60040</p>
+
+      </div>
+
+    </div>
+
+
+
+    <h1>Student Coordinators</h1>
+     
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>Lokesh R <br><br>
+           Student Coordinator    <br> <br>
+           +91 88709 46677</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Arul Hemapriya <br><br>    
+           Student Coordinator     <br><br>
+           +91 73389 93104</p>
+
+      </div>
+
+    </div>
+
+
+
+
+    <h1>Secretary</h1>
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>Mohana Priya B <br><br>
+           Secretary Of AI&DS   <br> <br>
+           +91 93455 70319</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Dinesh  <br><br>    
+           Joint Secretary Of AI&DS     <br><br>
+           +91 91509 98716</p>
+
+      </div>
+
+    </div>
+     <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b> Lakshmi priya M <br><br>
+           Secretary Of AI&ML <br> <br>
+           +91 96003 92545</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Gopinath P  <br><br>    
+            Secretary Of IT     <br><br>
+           +91 99628 38460</p>
+
+      </div>
+
+    </div>
+
+
+
+
+    <h1>Trustee</h1>
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>Sujatha T<br><br>
+           Trustee   <br> <br>
+           +91 88074 41384 </b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Nivetha V <br><br>    
+          Trustee     <br><br>
+           +91 93422 56672</p>
+
+      </div>
+
+    </div>
+
+
+
+
+    <h1>Editing Team</h1>
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>KirubaiRaj R <br><br>
+           Editor   <br> <br>
+           +91 93451 98238</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Aakash A <br><br>    
+           Editor    <br><br>
+           +91 95142 60040</p>
+
+      </div>
+
+    </div>
+
+    <div class="p1">
+      <div class="p1-1">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p><b>Aswin Raja <br><br>
+           President   <br> <br>
+           +91 82483 96035</b></p>
+      </div>
+      <div class="p1-2">
+        <img src="./ASSETS/teech_bg.jpeg" alt="">
+        <p>Mithun Sriram <br><br>    
+           Vice-President     <br><br>
+           +91 95142 60040</p>
+
+      </div>
+
+    </div>  
+
+
+
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // Set the date to count down to
+  const countDownDate = new Date("october 11, 2025 00:00:00").getTime();
+
+  const x = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    // Time calculations
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    // If countdown is over
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "Countdown Over!";
+    }
+  }, 1000);
+
+
+
+  const viewBtn = document.getElementById("viewDetailsBtn");
+  const closeBtn = document.getElementById("closeDetailsBtn");
+  const details = document.getElementById("eventDetails");
+
+  viewBtn.addEventListener("click", () => {
+    details.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    details.style.display = "none";
+  });
+
+  const viewDataQuestBtn = document.getElementById("viewDataQuestBtn");
+  const closeDataQuestBtn = document.getElementById("closeDataQuestBtn");
+  const dataQuestDetails = document.getElementById("dataQuestDetails");
+
+  viewDataQuestBtn.addEventListener("click", () => {
+    dataQuestDetails.classList.add("active");
+  });
+
+  closeDataQuestBtn.addEventListener("click", () => {
+    dataQuestDetails.classList.remove("active");
+  });
+
+
+
+
+
+
+
+  const viewCrosswordBtn = document.getElementById("viewCrosswordBtn");
+  const closeCrosswordBtn = document.getElementById("closeCrosswordBtn");
+  const crosswordDetails = document.getElementById("crosswordDetails");
+
+  viewCrosswordBtn.addEventListener("click", () => {
+    crosswordDetails.classList.add("active");
+  });
+
+  closeCrosswordBtn.addEventListener("click", () => {
+    crosswordDetails.classList.remove("active");
+  });
+
+
+
+  const viewcidBtn = document.getElementById("viewcidBtn");
+  const closecidBtn = document.getElementById("closecidBtn");
+  const cidDetails = document.getElementById("cidDetails");
+
+  viewcidBtn.addEventListener("click", () => {
+    cidDetails.classList.add("active");
+  });
+
+  closecidBtn.addEventListener("click", () => {
+    cidDetails.classList.remove("active");
+  });
+
+
+
+
+  const viewerBtn = document.getElementById("viewerBtn");
+  const closeerBtn = document.getElementById("closeerBtn");
+  const erDetails = document.getElementById("erDetails");
+
+  viewerBtn.addEventListener("click", () => {
+    erDetails.classList.add("active");
+  });
+
+  closeerBtn.addEventListener("click", () => {
+    erDetails.classList.remove("active");
+  });
+
+
+
+
+  const viewtotBtn = document.getElementById("viewtotBtn");
+  const closetotBtn = document.getElementById("closetotBtn");
+  const totDetails = document.getElementById("totDetails");
+
+  viewtotBtn.addEventListener("click", () => {
+    totDetails.classList.add("active");
+  });
+
+  closetotBtn.addEventListener("click", () => {
+    totDetails.classList.remove("active");
+  });
+
+
+
+
+
+  const viewsqBtn = document.getElementById("viewsqBtn");
+  const closesqBtn = document.getElementById("closesqBtn");
+  const sqDetails = document.getElementById("sqDetails");
+
+  viewsqBtn.addEventListener("click", () => {
+    sqDetails.classList.add("active");
+  });
+
+  closesqBtn.addEventListener("click", () => {
+    sqDetails.classList.remove("active");
+  });
+
+
+
+
+  const viewmvBtn = document.getElementById("viewmvBtn");
+  const closemvBtn = document.getElementById("closemvBtn");
+  const mvDetails = document.getElementById("mvDetails");
+
+  viewmvBtn.addEventListener("click", () => {
+    mvDetails.classList.add("active");
+  });
+
+  closemvBtn.addEventListener("click", () => {
+    mvDetails.classList.remove("active");
+  });
+
+
+  const viewffBtn = document.getElementById("viewffBtn");
+  const closeffBtn = document.getElementById("closeffBtn");
+  const ffDetails = document.getElementById("ffDetails");
+
+  viewffBtn.addEventListener("click", () => {
+    ffDetails.classList.add("active");
+  });
+
+  closeffBtn.addEventListener("click", () => {
+    ffDetails.classList.remove("active");
+  });
+
+
+</script>
+
+</html>
