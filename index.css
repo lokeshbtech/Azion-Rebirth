@@ -549,14 +549,81 @@ button{
 }
 
 .p1-1 img , .p1-2 img{
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%  ;
 }
 .p1-1 p , .p1-2 p{
   margin: 6px 0px 0px 30px;
   color: white;
 }
+.p3{
+  display: flex;
+  
+  justify-content: space-evenly;
+  margin: 20px 0px 0px 0px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.p1-3{
+  display: flex;
+  border: 2px solid silver;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgb(227, 227, 227);
+  width:500px;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  align-items: end;
+  justify-content: center;
+  gap: 50px;
+  margin: auto auto;
+}
+
+.p1-3 img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+footer{
+  height: 200px;
+  margin: 20px 0px 0px 0px;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+.gmail , .website, .instagram, .facebook{
+  display: flex;
+  gap: 30px;
+  margin: 10px 50px;
+  align-items: center;
+  text-align: center;
+}
+.gmail img, .website img , .instagram img , .facebook img {
+ height: 30px;
+ width: 30px; 
+ border-radius: 50%;
+ border: 1px solid silver;
+}
+.map{
+  margin: 30px ;
+}
+.map img{
+  height: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------------------------------------------ */
