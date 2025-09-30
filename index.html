@@ -137,13 +137,18 @@
 
             <p>An opportunity to present impactful research papers, gain insights, and engage in meaningful academic
               discussions.</p>
-            <button id="viewDetailsBtn">View Details</button>
+            <button id="viewDetailsBtn">Register</button>
           </div>
         </div>
 
+ 
+          
+
+
+
         <!-- Hidden event details section -->
-        <div id="eventDetails" class="event-details">
-          <div class="details-content">
+        <div id="ppeventDetails" class="ppevent-details">
+          <div class="ppdetails-content">
             <h2>Paper Presentation - Details</h2> <br>
             <p>
               The Paper Presentation event is a platform for participants to showcase their innovative ideas, research
@@ -695,17 +700,21 @@
 
 
 
-  const viewBtn = document.getElementById("viewDetailsBtn");
-  const closeBtn = document.getElementById("closeDetailsBtn");
-  const details = document.getElementById("eventDetails");
+  const viewDetailsBtn = document.getElementById("viewDetailsBtn");
+  const closeDetailsBtn = document.getElementById("closeDetailsBtn");
+  const ppeventDetails = document.getElementById("ppeventDetails");
 
-  viewBtn.addEventListener("click", () => {
-    details.style.display = "flex";
+  viewDetailsBtn.addEventListener("click", () => {
+    ppeventDetails.classList.add("active");
   });
 
-  closeBtn.addEventListener("click", () => {
-    details.style.display = "none";
+  closeDetailsBtn.addEventListener("click", () => {
+    ppeventDetails.classList.remove("active");
   });
+
+  
+
+
 
   const viewDataQuestBtn = document.getElementById("viewDataQuestBtn");
   const closeDataQuestBtn = document.getElementById("closeDataQuestBtn");
