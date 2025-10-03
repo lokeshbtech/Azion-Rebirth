@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <style>
   #countdown {
-    margin: 0px 0px 20px 350px;
+    margin: 0px 0px 30px 350px;
     font-size: 28px;
     font-weight: bold;
     color: white;
@@ -69,37 +70,60 @@
   </video>
   <header>
     <div class="header">
+      <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
       <div class="logo1">
         <img src="./ASSETS/aids_logo.png" alt="">
       </div>
-      <div class="headtitles">
-        <p><a href="#about">Home</a></p>
-        <p> <a href="#about">About Us</a></p>
-        <p><a href="#events_div">Event</a></p>
-        <p><a href="#Team">Contact</a></p>
       </div>
+
+      <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="headtitles">
+          <p><a href="#about">Home</a></p>
+          <p> <a href="#about">About Us</a></p>
+          <p><a href="#events_div">Event</a></p>
+          <p><a href="#Team">Contact</a></p>
+        </div>
+      </div>
+
       <div class="logo2">
         <img src="" alt="">
       </div>
 
     </div>
   </header>
-  <div class="hero1">
-    <p>AIZION</p>
-    <h3>An AI Vision</h3>
+  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+    <div class="hero1">
+      <p>AIZION</p>
+      <h3>An AI Vision</h3>
+    </div>
   </div>
+
+  <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+
   <div id="countdown">
-    <span id="days"></span> Days
-    <span id="hours"></span> Hours
-    <span id="minutes"></span> Minutes
-    <span id="seconds"></span> Seconds
-  </div>
+      <span id="days"></span> Days
+      <span id="hours"></span> Hours
+      <span id="minutes"></span> Minutes
+      <span id="seconds"></span> Seconds
+    </div>
+    </div>
+  
+
   <div class="hero2">
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
     <div id="about" class="container2-1">
       <h2>About Symposium</h2>
       <hr>
     </div>
+    </div>
 
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
     <div class="container2-2">
       <p>Aizion is an electrifying tech symposium where innovation meets excitement! We bring together tech
         enthusiasts for paper presentations, code debugging, and tech quiz, alongside thrilling non-technical
@@ -117,6 +141,8 @@
 
   </div>
 
+  </div>
+
 
   <!-- technical event segment -->
 
@@ -130,20 +156,23 @@
     <div class="tech_event_nav">
 
       <div class="hero3">
-        <div class="container3-1">
-          <img src="./ASSETS/paper presentations.jpg" alt="">
-          <div class="cont3-1-1">
-            <p>Paper presentation</p>
+        <div data-aos="zoom-in" data-aos-duration="1500">
+          <div class="container3-1">
+            <img src="./ASSETS/paper presentations.jpg" alt="">
+            <div class="cont3-1-1">
+              <p>Paper presentation</p>
 
-            <p>An opportunity to present impactful research papers, gain insights, and engage in meaningful academic
-              discussions.</p>
-            
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button id="viewDetailsBtn">Register</button></a>
+              <p>An opportunity to present impactful research papers, gain insights, and engage in meaningful academic
+                discussions.</p>
+
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+                target="_blank"><button id="viewDetailsBtn">Register</button></a>
+            </div>
           </div>
         </div>
 
- 
-          
+
+
 
 
 
@@ -168,20 +197,25 @@
               2 minutes – Question & Answer session with judges <br><br>
             </p>
             <span style="display: flex; justify-content: space-evenly;"><button id="closeDetailsBtn">Close</button>
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+                target="_blank"><button>Register</button></a></span>
           </div>
         </div>
 
       </div>
-      <div class="hero3">
-        <div class="container3-1">
-          <img src="./ASSETS/dataquest.jpg" alt="">
-          <div class="cont3-1-1">
-            <p>DataQuest: Analytics Arena</p>
 
-            <p>A thrilling three-round technical quiz in the Data Analytics domain testing basics, dataset
-              interpretation, and rapid analytical thinking.</p>
-            <button id="viewDataQuestBtn">View Details</button>
+
+      <div class="hero3">
+        <div data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="container3-1">
+            <img src="./ASSETS/dataquest.jpg" alt="">
+            <div class="cont3-1-1">
+              <p>DataQuest: Analytics Arena</p>
+
+              <p>A thrilling three-round technical quiz in the Data Analytics domain testing basics, dataset
+                interpretation, and rapid analytical thinking.</p>
+              <button id="viewDataQuestBtn">View Details</button>
+            </div>
           </div>
         </div>
 
@@ -200,21 +234,26 @@
             pressure. It’s the ultimate arena where speed meets accuracy in the world of data analytics!
           </p> <br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closeDataQuestBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
 
       <!-- section of the Crossword -->
-      <div class="hero3">
-        <div class="container3-1">
-          <img src="./ASSETS/mind strom.jpg" alt="">
-          <div class="cont3-1-1">
-            <p>Mind Strom</p>
 
-            <p>An exciting puzzle-solving contest with crosswords, abbreviations, and memory challenges testing Python,
-              AI & DS knowledge.</p>
-            <button id="viewCrosswordBtn">View Details</button>
+      <div class="hero3">
+        <div data-aos="zoom-out" data-aos-duration="1500">
+          <div class="container3-1">
+            <img src="./ASSETS/mind strom.jpg" alt="">
+            <div class="cont3-1-1">
+              <p>Mind Strom</p>
+
+              <p>An exciting puzzle-solving contest with crosswords, abbreviations, and memory challenges testing
+                Python,
+                AI & DS knowledge.</p>
+              <button id="viewCrosswordBtn">View Details</button>
+            </div>
           </div>
         </div>
 
@@ -238,7 +277,8 @@
           A test of logic, knowledge, and quick thinking!
         </p> <br>
         <span style="display: flex; justify-content: space-evenly;"><button id="closeCrosswordBtn">Close</button> <br>
-           <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+            target="_blank"><button>Register</button></a></span>
       </div>
     </div>
 
@@ -248,15 +288,18 @@
 
     <!-- section of the Cipher in the dark -->
     <div class="tech_event_nav">
-      <div class="hero3">
-        <div class="container3-1">
-          <img src="./ASSETS/cipher in the dark.jpg" alt="">
-          <div class="cont3-1-1">
-            <p> Cipher in the Dark</p>
 
-            <p>Cipher in the Dark is a thrilling blind coding challenge testing logic, debugging, and accuracy across
-              three intense rounds.</p>
-            <button id="viewcidBtn">View Details</button>
+      <div class="hero3">
+        <div data-aos="zoom-out-down" data-aos-duration="1500">
+          <div class="container3-1">
+            <img src="./ASSETS/cipher in the dark.jpg" alt="">
+            <div class="cont3-1-1">
+              <p> Cipher in the Dark</p>
+
+              <p>Cipher in the Dark is a thrilling blind coding challenge testing logic, debugging, and accuracy across
+                three intense rounds.</p>
+              <button id="viewcidBtn">View Details</button>
+            </div>
           </div>
         </div>
 
@@ -283,7 +326,8 @@
             “Code without sight, compete with insight!”
           </p><br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closecidBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
@@ -293,17 +337,19 @@
 
 
       <div class="hero3">
-        <div class="container3-1">
-          <img src="./ASSETS/edge runners.jpg" alt="">
-          <div class="cont3-1-1">
-            <p>Edge Runners</p>
+        <div data-aos="zoom-in-up" data-aos-duration="1500">
+          <div class="container3-1">
+            <img src="./ASSETS/edge runners.jpg" alt="">
+            <div class="cont3-1-1">
+              <p>Edge Runners</p>
 
-            <p>An interactive murder-mystery event where teams solve riddles, puzzles, and coding challenges to uncover
-              the killer.</p>
-            <button id="viewerBtn">View Details</button>
+              <p>An interactive murder-mystery event where teams solve riddles, puzzles, and coding challenges to
+                uncover
+                the killer.</p>
+              <button id="viewerBtn">View Details</button>
+            </div>
           </div>
         </div>
-
 
       </div>
 
@@ -327,7 +373,8 @@
             “It’s not just solving puzzles—it’s a race against time!”
           </p><br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closeerBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
@@ -352,14 +399,16 @@
 
       <!-- section of the triad of triumph -->
       <div class="hero4">
-        <div class="container4-1">
-          <img src="./ASSETS/teech_bg.jpeg" alt="">
-          <div class="cont4-1-1">
-            <p>Triad Of Triumph </p>
+        <div data-aos="zoom-in-right" data-aos-duration="1500">
+          <div class="container4-1">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <div class="cont4-1-1">
+              <p>Triad Of Triumph </p>
 
-            <p>A fun non-technical event with trivia, active games, and clay modeling testing creativity, speed, and
-              teamwork across three rounds</p>
-            <button id="viewtotBtn">View Details</button>
+              <p>A fun non-technical event with trivia, active games, and clay modeling testing creativity, speed, and
+                teamwork across three rounds</p>
+              <button id="viewtotBtn">View Details</button>
+            </div>
           </div>
         </div>
 
@@ -373,26 +422,31 @@
           <h2>Traid Of Triumph - Details</h2><br>
           <p>
             <b>Round 1:</b> Trivia: A quiz where all answers must begin with a given letter. <br><br>
-            <b>Round 2:</b> Move Mania: A set of 3 sub-games – Twisters, Sort the Balls, Arrange the Cans. Each pair of teams competes in one sub-game. <br><br>
-            <b>Round 3:</b>Mold Masters (Final): Clay modelling challenge where teams recreate 2 figures displayed on the projector. Judging based on speed & craftsmanship.<br><br><br>
-            “Trivia, twists, and talent—fun reimagined!”          
-</p><br>
+            <b>Round 2:</b> Move Mania: A set of 3 sub-games – Twisters, Sort the Balls, Arrange the Cans. Each pair of
+            teams competes in one sub-game. <br><br>
+            <b>Round 3:</b>Mold Masters (Final): Clay modelling challenge where teams recreate 2 figures displayed on
+            the projector. Judging based on speed & craftsmanship.<br><br><br>
+            “Trivia, twists, and talent—fun reimagined!”
+          </p><br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closetotBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
       <!-- section of squid game -->
 
       <div class="hero4">
-        <div class="container4-1">
-          <img src="./ASSETS/squidgame.jpg" alt="">
-          <div class="cont4-1-1">
-            <p>Squid Game</p>
+        <div data-aos="zoom-out-down" data-aos-duration="1500">
+          <div class="container4-1">
+            <img src="./ASSETS/squidgame.jpg" alt="">
+            <div class="cont4-1-1">
+              <p>Squid Game</p>
 
-            <p>A fun-filled non-technical event featuring balloon towers, water pong, and ping-pong challenges testing
-              teamwork, creativity, and strategy</p>
-            <button id="viewsqBtn">View Details</button>
+              <p>A fun-filled non-technical event featuring balloon towers, water pong, and ping-pong challenges testing
+                teamwork, creativity, and strategy</p>
+              <button id="viewsqBtn">View Details</button>
+            </div>
           </div>
         </div>
       </div>
@@ -404,31 +458,37 @@
         <div class="sqdetails-content2">
           <h2>Squid Game - Details</h2><br>
           <p>
-            A fun, non-technical event focused on creativity, teamwork, 
+            A fun, non-technical event focused on creativity, teamwork,
             and strategy. Participants will engage in interactive and
-             entertaining challenges that test their wit, coordination, 
-             and imagination. <br><br>
-            <b>Round 1:</b> Balloon Cup Tower: Teams use balloons to stack paper cups into the tallest freestanding tower within 3 minutes. The tallest stable tower wins. <br><br>
-            <b>Round 2:</b> Water Pong Game: Teams throw balls into cups filled with water, aiming to hit all 10 cups first. <br><br>
-            <b>Round 3:</b> Ping-Pong Ball Game: Players throw ping-pong balls into a glass, scoring points for each successful shot. The highest score wins.<br><br><br>
+            entertaining challenges that test their wit, coordination,
+            and imagination. <br><br>
+            <b>Round 1:</b> Balloon Cup Tower: Teams use balloons to stack paper cups into the tallest freestanding
+            tower within 3 minutes. The tallest stable tower wins. <br><br>
+            <b>Round 2:</b> Water Pong Game: Teams throw balls into cups filled with water, aiming to hit all 10 cups
+            first. <br><br>
+            <b>Round 3:</b> Ping-Pong Ball Game: Players throw ping-pong balls into a glass, scoring points for each
+            successful shot. The highest score wins.<br><br><br>
             "Play, Team Up, and Tower Up the Fun!"
           </p><br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closesqBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
       <!-- section of Mystery vibes -->
 
       <div class="hero4">
-        <div class="container4-1">
-          <img src="./ASSETS/mystery vibes.jpg" alt="">
-          <div class="cont4-1-1">
-            <p>Mystery Vibes </p>
+        <div data-aos="zoom-out-left" data-aos-duration="1500">
+          <div class="container4-1">
+            <img src="./ASSETS/mystery vibes.jpg" alt="">
+            <div class="cont4-1-1">
+              <p>Mystery Vibes </p>
 
-            <p>A fun entertainment quiz where participants identify movies and songs through images, lyrics, and
-              music with scoring challenges.</p>
-            <button id="viewmvBtn">View Details</button>
+              <p>A fun entertainment quiz where participants identify movies and songs through images, lyrics, and
+                music with scoring challenges.</p>
+              <button id="viewmvBtn">View Details</button>
+            </div>
           </div>
         </div>
 
@@ -440,19 +500,23 @@
         <div class="mvdetails-content2">
           <h2>Mystery Vibes - Details</h2><br>
           <p>
-            Mystery Vibes is an entertaining, non-technical event where participants 
-            test their knowledge of movies and songs. The competition features 
-            multiple rounds: guessing movies from images, identifying missing 
-            lines in song lyrics, and recognizing songs or movies from background 
-            music (BGM). 
+            Mystery Vibes is an entertaining, non-technical event where participants
+            test their knowledge of movies and songs. The competition features
+            multiple rounds: guessing movies from images, identifying missing
+            lines in song lyrics, and recognizing songs or movies from background
+            music (BGM).
             Wrong answers carry negative marks, adding an exciting challenge. <br><br>
-            <b>Round 1:</b>Frame-to-Film Matching: Identify the movie from still frames or images, including tricky or iconic shots.<br><br>
-            <b>Round 2:</b> Lyrics Matchup: Match given lyrics to the correct song and/or movie. Lyrics may be original or translated. <br><br>
-            <b>Round 3:</b> Track Finder: Identify the song or movie from short audio clips, which may be altered to increase difficulty. <br><br><br>
-            “Guess the Frames, Fill the Lines, Find the Tunes!”          
+            <b>Round 1:</b>Frame-to-Film Matching: Identify the movie from still frames or images, including tricky or
+            iconic shots.<br><br>
+            <b>Round 2:</b> Lyrics Matchup: Match given lyrics to the correct song and/or movie. Lyrics may be original
+            or translated. <br><br>
+            <b>Round 3:</b> Track Finder: Identify the song or movie from short audio clips, which may be altered to
+            increase difficulty. <br><br><br>
+            “Guess the Frames, Fill the Lines, Find the Tunes!”
           </p><br>
           <span style="display: flex; justify-content: space-evenly;"><button id="closemvBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+              target="_blank"><button>Register</button></a></span>
         </div>
       </div>
 
@@ -465,35 +529,99 @@
     <!-- section for ff -->
     <div class="non_tech_event_nav">
       <div class="hero4">
-        <div class="container4-1">
-          <img src="./ASSETS/ff.jpg" alt="">
-          <div class="cont4-1-1">
-            <p>E-Sportz</p>
-            <p>An action-packed Esports event featuring Free Fire and BGMI, where teams battle for glory, skill, and
-              ultimate victory.</p>
-            <button id="viewffBtn">View Details</button>
+        <div data-aos="zoom-out-up" data-aos-duration="1500">
+          <div class="container4-1">
+            <img src="./ASSETS/ff.jpg" alt="">
+            <div class="cont4-1-1">
+              <p>E-Sportz</p>
+              <p>An action-packed Esports event featuring Free Fire and BGMI, where teams battle for glory, skill, and
+                ultimate victory.</p>
+              <button id="viewffBtn">View Details</button>
+            </div>
           </div>
-        </div>  
-
+        </div>
       </div>
 
-      <!-- Hidden details section ff -->
+    </div>
 
-      <div id="ffDetails" class="ffevent-details2">
-        <div class="ffdetails-content2">
-          <h2>E-Sportz - Details</h2><br>
-          <p>
-            Battle Vibes is an action-packed, non-technical gaming event where 
-            participants showcase their skills in BGMI and Free Fire. The rounds 
-            will be announced live, keeping the excitement and suspense high. 
-            Players compete in fun and challenging tasks, 
-            testing their strategy, teamwork, and reflexes. <br> <br>
-            <b>Rounds :</b> The specific rounds and challenges will be revealed during the live event to keep participants on their toes. <br><br>
-            
-            “Gear Up, Squad Up, Game On!”
-          </p><br>
-          <span style="display: flex; justify-content: space-evenly;"><button id="closeffBtn">Close</button>
-             <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header" target="_blank"><button>Register</button></a></span>
+    <!-- Hidden details section ff -->
+
+    <div id="ffDetails" class="ffevent-details2">
+      <div class="ffdetails-content2">
+        <h2>E-Sportz - Details</h2><br>
+        <p>
+          Battle Vibes is an action-packed, non-technical gaming event where
+          participants showcase their skills in BGMI and Free Fire. The rounds
+          will be announced live, keeping the excitement and suspense high.
+          Players compete in fun and challenging tasks,
+          testing their strategy, teamwork, and reflexes. <br> <br>
+          <b>Rounds :</b> The specific rounds and challenges will be revealed during the live event to keep
+          participants on their toes. <br><br>
+
+          “Gear Up, Squad Up, Game On!”
+        </p><br>
+        <span style="display: flex; justify-content: space-evenly;"><button id="closeffBtn">Close</button>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSehEGJXT76uZnbq3DXYZex5tQ3Zac3EerEaACGV-gLN4lK5Qw/viewform?usp=header"
+            target="_blank"><button>Register</button></a></span>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+  </div>
+  <hr>
+
+
+
+
+  <div class="team" id="Team">
+    <h1>Meet Our Team</h1>
+
+    <div class="president">
+      <h2>President & vice-president</h2>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/aswin.jpg" alt="">
+            <p><b>Aswin Raja <br><br>
+                President <br> <br>
+                +91 82483 96035</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p>Mithun Sriram <br><br>
+              Vice-President <br><br>
+              +91 95142 60040</p>
+
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <h1>Student Coordinators</h1>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/Lokesh_r.jpg" alt="">
+            <p><b>Lokesh R <br><br>
+                Student Coordinator <br> <br>
+                +91 88709 46677</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/hemapriya.JPG" alt="">
+            <p>Arul Hemapriya <br><br>
+              Student Coordinator <br><br>
+              +91 73389 93104</p>
+
+          </div>
+
         </div>
       </div>
 
@@ -501,200 +629,161 @@
 
 
 
-    </div>
+      <h1>Secretary</h1>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/mohana priya.jpg" alt="">
+            <p><b>Mohana Priya B <br><br>
+                Secretary Of AI&DS <br> <br>
+                +91 93455 70319</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p>Dinesh <br><br>
+              Joint Secretary Of AI&DS <br><br>
+              +91 91509 98716</p>
 
-  </div>
-  <hr>
+          </div>
 
+        </div>
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p><b> Lakshmi priya M <br><br>
+                Secretary Of AI&ML <br> <br>
+                +91 96003 92545</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p>Gopinath P <br><br>
+              Secretary Of IT <br><br>
+              +91 99628 38460</p>
 
+          </div>
 
-
-<div class="team" id="Team">
-  <h1>Meet Our Team</h1>
-  <div class="president">
-    <h2>President & vice-president</h2>
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/aswin.jpg" alt="">
-        <p><b>Aswin Raja <br><br>
-           President   <br> <br>
-           +91 82483 96035</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Mithun Sriram <br><br>    
-           Vice-President     <br><br>
-           +91 95142 60040</p>
-
-      </div>
-
-    </div>
-
-
-
-    <h1>Student Coordinators</h1>
-     
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/Lokesh_r.jpg" alt="">
-        <p><b>Lokesh R <br><br>
-           Student Coordinator    <br> <br>
-           +91 88709 46677</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Arul Hemapriya <br><br>    
-           Student Coordinator     <br><br>
-           +91 73389 93104</p>
-
+        </div>
       </div>
 
-    </div>
 
 
 
 
-    <h1>Secretary</h1>
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p><b>Mohana Priya B <br><br>
-           Secretary Of AI&DS   <br> <br>
-           +91 93455 70319</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Dinesh  <br><br>    
-           Joint Secretary Of AI&DS     <br><br>
-           +91 91509 98716</p>
+      <h1>Trustee</h1>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/sujatha.JPG" alt="">
+            <p><b>Sujatha T<br><br>
+                Trustee <br> <br>
+                +91 88074 41384 </b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/nivetha.JPG" alt="">
+            <p>Nivetha V <br><br>
+              Trustee <br><br>
+              +91 93422 56672</p>
 
-      </div>
+          </div>
 
-    </div>
-     <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p><b> Lakshmi priya M <br><br>
-           Secretary Of AI&ML <br> <br>
-           +91 96003 92545</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Gopinath P  <br><br>    
-            Secretary Of IT     <br><br>
-           +91 99628 38460</p>
-
+        </div>
       </div>
 
-    </div>
 
 
 
 
-    <h1>Trustee</h1>
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p><b>Sujatha T<br><br>
-           Trustee   <br> <br>
-           +91 88074 41384 </b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Nivetha V <br><br>    
-          Trustee     <br><br>
-           +91 93422 56672</p>
+      <h1>Editing Team</h1>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
 
-      </div>
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p><b>KirubaiRaj R <br><br>
+                Editor <br> <br>
+                +91 93451 98238</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p>Aakash A <br><br>
+              Editor <br><br>
+              +91 95142 60040</p>
 
-    </div>
+          </div>
 
+        </div>
 
+        <div class="p1">
+          <div class="p1-1">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p><b>Aswin Raja <br><br>
+                President <br> <br>
+                +91 82483 96035</b></p>
+          </div>
+          <div class="p1-2">
+            <img src="./ASSETS/teech_bg.jpeg" alt="">
+            <p>Mithun Sriram <br><br>
+              Vice-President <br><br>
+              +91 95142 60040</p>
 
+          </div>
 
-    <h1>Editing Team</h1>
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p><b>KirubaiRaj R <br><br>
-           Editor   <br> <br>
-           +91 93451 98238</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Aakash A <br><br>    
-           Editor    <br><br>
-           +91 95142 60040</p>
-
-      </div>
-
-    </div>
-
-    <div class="p1">
-      <div class="p1-1">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p><b>Aswin Raja <br><br>
-           President   <br> <br>
-           +91 82483 96035</b></p>
-      </div>
-      <div class="p1-2">
-        <img src="./ASSETS/teech_bg.jpeg" alt="">
-        <p>Mithun Sriram <br><br>    
-           Vice-President     <br><br>
-           +91 95142 60040</p>
-
+        </div>
       </div>
 
-    </div>
-    
-    <h1>Website Creation</h1>
-    <div class="p3">
-      <div class="p1-3">
-        <img src="./ASSETS/l2.jpg" alt="">
-        <p><b>Lokesh R <br><br>
-           rlokeshtech@gmail.com   <br> <br>
-           +91 8870 946677</b></p>
+      <h1>Website Creation</h1>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <div class="p3">
+          <div class="p1-3">
+            <img src="./ASSETS/l2.jpg" alt="">
+            <p><b>Lokesh R <br><br>
+                rlokeshtech@gmail.com <br> <br>
+                +91 8870 946677</b></p>
+          </div>
+
+
+        </div>
       </div>
-      
+
+
+
 
     </div>
 
 
 
-</div>
 
 
+    <footer>
+      <hr>
+      <div class="footer">
 
+        <div class="g">
+          <div class="gmail">
+            <img src="./ASSETS/google.png" alt="">
+            <p>Azion_2k25@gmail.com</p>
+          </div>
+          <div class="website">
+            <img src="./ASSETS/world-wide-web.png" alt="">
+            <p>https://lokeshbtech.github.io/Azion-Rebirth/</p>
+          </div>
+          <div class="instagram">
+            <img src="./ASSETS/insta.png" alt="">
+            <p>Azion_Rebirth</p>
+          </div>
+          <div class="facebook">
+            <img src="./ASSETS/facebook.png" alt="">
+            <p>Azion_Rebirth</p>
+          </div>
+        </div>
 
+        <div class="map">
+          <img src="./ASSETS/QR_location.jpg" alt="">
+          <p>Location of Our College</p>
+        </div>
 
-<footer>
-  <hr>
-  <div class="footer">
-    <div class="g">
-      <div class="gmail">
-        <img src="./ASSETS/google.png" alt="">
-        <p>Azion_2k25@gmail.com</p>
       </div>
-      <div class="website">
-        <img src="./ASSETS/world-wide-web.png" alt="">
-        <p>https://lokeshbtech.github.io/Azion-Rebirth/</p>
-      </div>
-      <div class="instagram">
-        <img src="./ASSETS/insta.png" alt="">
-        <p>Azion_Rebirth</p>
-      </div>
-      <div class="facebook">
-        <img src="./ASSETS/facebook.png" alt="">
-        <p>Azion_Rebirth</p>
-      </div>
-    </div>
-    <div class="map">
-      <img src="./ASSETS/QR_location.jpg" alt="">
-      <p>Location of Our College</p>
-    </div>
-
-  </div>
-</footer>
+    </footer>
 
 
 
@@ -758,7 +847,7 @@
     ppeventDetails.classList.remove("active");
   });
 
-  
+
 
 
 
@@ -881,6 +970,10 @@
   });
 
 
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
 
 </html>

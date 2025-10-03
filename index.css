@@ -2,6 +2,9 @@
   padding: 0px;
   margin: 0px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   /* background-color: blueviolet; */
@@ -72,7 +75,7 @@ a {
 
 .hero1 {
   /* background-color: rgb(224, 175, 185); */
-  height: 400px;
+  height: 350px;
   cursor: pointer;
 }
 
@@ -641,7 +644,14 @@ button {
   height: 120px;
   width: 120px;
   border-radius: 50%;
+  transition: 0.35s ease-in-out;
+
 }
+.p1-3:hover{
+  scale: 1.1;
+
+} 
+
 
 footer {
   height: 200px;
